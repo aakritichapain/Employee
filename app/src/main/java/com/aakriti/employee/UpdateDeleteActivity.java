@@ -30,12 +30,7 @@ public class UpdateDeleteActivity extends AppCompatActivity {
             }
         });
         btnUpdate=findViewById(R.id.btnUpdate);
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
     }
 }
