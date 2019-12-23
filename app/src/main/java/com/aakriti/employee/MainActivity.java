@@ -1,6 +1,7 @@
 package com.aakriti.employee;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +12,14 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnShowEmployee,btnAddEmployee,btnSearch,btnUpdate;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnShowEmployee=findViewById(R.id.btnUpdate);
+
+        btnShowEmployee=findViewById(R.id.btnShowEmployee);
         btnShowEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
