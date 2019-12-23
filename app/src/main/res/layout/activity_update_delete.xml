@@ -27,7 +27,7 @@
 
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/etEName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -37,7 +37,7 @@
 
 
     <EditText
-        android:id="@+id/etSalary"
+        android:id="@+id/etESalary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -46,7 +46,7 @@
         />
 
     <EditText
-        android:id="@+id/etAge"
+        android:id="@+id/etEAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -59,6 +59,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Update"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Delete"
         android:textSize="20sp"
         />
 
