@@ -18,7 +18,7 @@ public class UpdateDeleteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update_delete);
 
         etEmployee=findViewById(R.id.etEmployee);
-        etName=findViewById(R.id.etNameE);
+        etName=findViewById(R.id.etEmpNo);
         etAge=findViewById(R.id.etAge);
         etSalary=findViewById(R.id.etSalary);
 
