@@ -64,7 +64,7 @@ public class UpdateDeleteActivity extends AppCompatActivity {
 
     }
 
-    private void CreateInstance() {
+    /*private void CreateInstance() {
         retrofitt  = new Retrofit.Builder()
                 .baseUrl(URL.base_url)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -72,11 +72,12 @@ public class UpdateDeleteActivity extends AppCompatActivity {
 
         employeeAPI = retrofitt.create(EmployeeAPI.class);
 
-    }
+    }*/
 
 
     private void loadData() {
-        CreateInstance();
+        EmployeeAPI employeeAPI = URL.CreateInstance().create(EmployeeAPI.class);
+       // CreateInstance();
         Call<Employee> listCall = employeeAPI.getEmployeeByID(Integer.parseInt(etEmployee.getText().toString()));
 
 
@@ -96,7 +97,7 @@ public class UpdateDeleteActivity extends AppCompatActivity {
     }
 
     private void updateEmployee(){
-        CreateInstance();
+        EmployeeAPI employeeAPI = URL.CreateInstance().create(EmployeeAPI.class);
         EmployeeCUD employeeCUD = new EmployeeCUD(
                 etEName.getText().toString(),
                Integer.parseInt( etESalary.getText().toString()),
@@ -121,7 +122,7 @@ public class UpdateDeleteActivity extends AppCompatActivity {
     }
 
     private void deleteEmployee(){
-        CreateInstance();
+        EmployeeAPI employeeAPI = URL.CreateInstance().create(EmployeeAPI.class);
         Call<Void> voidCall = employeeAPI.deleteEmployee(Integer.parseInt(etEmployee.getText().toString()));
 
         voidCall.enqueue(new Callback<Void>() {
